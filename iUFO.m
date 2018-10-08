@@ -1,7 +1,7 @@
 function [u,energy] = iUFO(im,iteration)
 %Image Filtering with Generic Geometric Prior
 
-% @ARTICLE{8470940, 
+% @ARTICLE{gong:ufo, 
 % author={Y. Gong and X. Hou and F. Li and G. Qiu}, 
 % journal={IEEE Access}, 
 % title={Image Filtering with Generic Geometric Prior}, 
@@ -55,7 +55,7 @@ dist(:,:,5) = conv2(u,k3,'same');
 dist(:,:,6) = conv2(u,fliplr(k3),'same');
 dist(:,:,7) = conv2(u,k3','same');
 dist(:,:,8) = conv2(u,flipud(k3'),'same');
-%wmc
+%mc
 dist(:,:,9) = conv2(u,k4,'same');
 dist(:,:,10) = conv2(u,fliplr(k4),'same');
 dist(:,:,11) = conv2(u,k4','same');
